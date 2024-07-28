@@ -48,36 +48,15 @@ import sys.thread.Thread;
 
 using StringTools;
 
-import polymod.Polymod;
-import polymod.Polymod.PolymodError;
-
 class BootupState extends MusicBeatState
 {
 	public static var loadedStuff:Bool = false;
 
 	override public function create():Void
 	{
-		/*#if polymod
-		var errors = (error:PolymodError) ->
-		{
-			trace(error.severity + ": " + error.code + " - " + error.message + " - ORIGIN: " + error.origin);
-		};
-
-		
-		polymod.Polymod.init({
-			modRoot: "mods", 
-			dirs: ['introMod'],
-			errorCallback: errors,
-			framework: OPENFL,
-			ignoredFiles: Polymod.getDefaultIgnoreList(),
-			frameworkParams: {
-			}
-		});
-		#end*/
-		
 		#if sys
-		if (!sys.FileSystem.exists(Sys.getCwd() + "/assets/replays"))
-			sys.FileSystem.createDirectory(Sys.getCwd() + "/assets/replays");
+		if (!sys.FileSystem.exists("assets/replays"))
+			sys.FileSystem.createDirectory("assets/replays");
 		#end
 
 		@:privateAccess
