@@ -118,9 +118,7 @@ class Main extends Sprite
 
 	public function getFPSCap():Float
 	{
-		#if desktop
-		return openfl.Lib.current.stage.frameRate;
-		#end
+		return;
 	}
 
 	public function getFPS():Float
