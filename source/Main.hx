@@ -94,8 +94,7 @@ class Main extends Sprite
 		FlxG.signals.preStateSwitch.add(function () {
 				Paths.clearStoredMemory(true);
 				FlxG.bitmap.dumpCache();
-			}
-		});
+	        });
 		FlxG.signals.postStateSwitch.add(function () {
 			Paths.clearUnusedMemory();
 		});
