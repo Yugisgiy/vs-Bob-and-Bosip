@@ -105,7 +105,7 @@ class BootupState extends MusicBeatState
 		
 		loadedStuff = true;
 
-		LoadingState.loadAndSwitchState(new VideoState2("assets/videos/desktop.webm", new PlayState());
+		LoadingState.loadAndSwitchState(new VideoState2("assets/videos/desktop.webm", new DesktopState());
 	}
 
 	override function update(elapsed:Float)
