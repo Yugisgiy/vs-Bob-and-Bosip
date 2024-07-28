@@ -242,6 +242,61 @@ class Paths
 		#end
 	}
 
+	inline static public function voicesEX(song:String):Any
+	{
+		#if html5
+		return 'songs:assets/songs/${formatToSongPath(song)}/VoicesEX.$SOUND_EXT';
+		#else
+		var songKey:String = '${formatToSongPath(song)}/VoicesEX';
+		var voices = returnSound('songs', songKey);
+		return voices;
+		#end
+	}
+
+	inline static public function instEX(song:String):Any
+	{
+		#if html5
+		return 'songs:assets/songs/${formatToSongPath(song)}/InstEX.$SOUND_EXT';
+		#else
+		var songKey:String = '${formatToSongPath(song)}/InstEX';
+		var inst = returnSound('songs', songKey);
+		return inst;
+		#end
+	}
+
+	inline static public function instcheck(song:String):Any
+	{
+		#if html5
+		return 'songs:assets/songs/${formatToSongPath(song)}/Inst.$SOUND_EXT';
+		#else
+		var songKey:String = '${formatToSongPath(song)}/Inst';
+		var inst = returnSound('songs', songKey);
+		return inst;
+		#end
+	}
+
+	inline static public function instEXcheck(song:String):Any
+	{
+		#if html5
+		return 'songs:assets/songs/${formatToSongPath(song)}/InstEX.$SOUND_EXT';
+		#else
+		var songKey:String = '${formatToSongPath(song)}/InstEX';
+		var inst = returnSound('songs', songKey);
+		return inst;
+		#end
+	}
+
+	inline static public function voicesEXcharacter(song:String, char:String):Any
+	{
+		#if html5
+		return 'songs:assets/songs/${formatToSongPath(song)}/Voices.$SOUND_EXT';
+		#else
+		var songKey:String = '${formatToSongPath(song)}/VoicesEX${char}';
+		var voices = returnSound('songs', songKey);
+		return voices;
+		#end
+	}
+
 	static public function getTextFromFile(key:String, ?ignoreMods:Bool = false):String
 	{
 		#if MODS_ALLOWED
