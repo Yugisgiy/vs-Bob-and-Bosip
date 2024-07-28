@@ -34,7 +34,7 @@ jobs:
       - name: Setup Haxe
         uses: krdlab/setup-haxe@38fd78cc3a7960b281cf4a33a63a9c1543ac4598
         with:
-          haxe-version: 4.2.4
+          haxe-version: 4.3.5
       
       - name: Restore Previous Cache
         id: cache-debug-build-android-restore
@@ -63,7 +63,6 @@ jobs:
           haxelib install hxvlc
           haxelib install actuate
           haxelib install newgrounds 1.3.0
-          haxelib git polymod https://github.com/larsiusprime/polymod
           haxelib git linc_luajit https://github.com/mcagabe19/linc_luajit-legacy.git
           haxelib install extension-androidtools
           haxelib install hxcpp-debug-server
