@@ -6719,7 +6719,10 @@ class PlayState extends MusicBeatState
 						
 						case 18:
 							if (!FlxG.save.data.lowDetail)
+							{
 								//backgroundVideo("assets/videos/ronsip.webm");
+							}
+								
 						case 48: 
 							if (!FlxG.save.data.lowDetail)
 								//BackgroundVideo.get().stop();
