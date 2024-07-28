@@ -105,12 +105,7 @@ class BootupState extends MusicBeatState
 		
 		loadedStuff = true;
 
-		new FlxTimer().start(1, function(tmr:FlxTimer)
-		{
-			LoadingState.loadAndSwitchState(new VideoState2("assets/videos/desktop.webm", function() {
-				FlxG.switchState(new DesktopState());
-			}, 2000));
-		});
+		LoadingState.loadAndSwitchState(new VideoState2("assets/videos/desktop.webm", new PlayState());
 	}
 
 	override function update(elapsed:Float)
