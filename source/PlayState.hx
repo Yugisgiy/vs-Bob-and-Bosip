@@ -6936,7 +6936,9 @@ class PlayState extends MusicBeatState
 						defaultCamZoom = 0.75;
 					case 943:
 						if (!FlxG.save.data.lowDetail)
+							{
 							//backgroundVideo("assets/videos/TV static noise HD 1080p.webm");
+							}
 					case 944:
 						if (!FlxG.save.data.lowDetail)
 							//BackgroundVideo.get().stop();
@@ -6950,7 +6952,9 @@ class PlayState extends MusicBeatState
 					case 1072: 
 						//WaterMelon
 						if (!FlxG.save.data.lowDetail)
+						{
 							//backgroundVideo("assets/videos/watermelon.webm");
+						}
 					case 1088:
 						if (!FlxG.save.data.lowDetail)
 							//BackgroundVideo.get().stop();
