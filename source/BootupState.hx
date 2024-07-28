@@ -86,22 +86,6 @@ class BootupState extends MusicBeatState
 
 		FlxG.sound.playMusic(Paths.music('menuIntro'));
 		FlxG.sound.music.stop();
-		var initSonglist = CoolUtil.coolTextFile(Paths.txt('freeplaySonglist'));
-		for (i in 0...initSonglist.length)
-		{
-			var data:Array<String> = initSonglist[i].split(':');
-			var songHighscore = StringTools.replace(data[0], " ", "-");
-				switch (songHighscore) {
-					case 'Dad-Battle': songHighscore = 'Dadbattle';
-					case 'Philly-Nice': songHighscore = 'Philly';
-			}
-			if (!loadedStuff) {
-				FlxG.sound.cache(Paths.inst(songHighscore));
-				if (FileSystem.exists(Paths.instEXcheck(songHighscore))) {
-					FlxG.sound.cache(Paths.instEX(songHighscore));
-				}
-			}
-		}
 		
 		loadedStuff = true;
 
