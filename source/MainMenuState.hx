@@ -24,10 +24,10 @@ import io.newgrounds.NG;
 import lime.app.Application;
 import flixel.math.FlxPoint;
 import flixel.math.FlxMath;
+import sys.FileSystem;
 
 #if windows
 import Discord.DiscordClient;
-import sys.FileSystem;
 #end
 
 using StringTools;
@@ -425,27 +425,6 @@ class MainMenuState extends MusicBeatState
 		vocals2 = new FlxSound();
 		if (FreeplayState.bpm > 0) {
 			Conductor.changeBPM(FreeplayState.bpm);
-			if (FreeplayState.isEX) {
-				if (curCharacter != 'deadron' && curCharacter != 'cj' && curCharacter != 'cerberus') {
-					vocals = FlxG.sound.play(Paths.voicesEXMenu(FreeplayState.curSong, curCharacter));
-				} else {
-					vocals = new FlxSound();
-				}
-				if (useCharacter2) {
-					vocals2 = FlxG.sound.play(Paths.voicesEXMenu(FreeplayState.curSong, 'cerbera')); 
-				}
-			} else {
-				if (curCharacter != 'deadron' && curCharacter != 'cj' && curCharacter != 'cerberus') {
-					trace(curCharacter);
-					vocals = FlxG.sound.play(Paths.voicesMenu(FreeplayState.curSong, curCharacter));
-				} else {
-					vocals = new FlxSound();
-				}
-				if (useCharacter2) {
-					vocals2 = FlxG.sound.play(Paths.voicesMenu(FreeplayState.curSong, 'cerbera')); 
-				}
-				
-			}
 			vocals.volume = 0;
 			//vocals.play();
 			vocals.time = FlxG.sound.music.time;
