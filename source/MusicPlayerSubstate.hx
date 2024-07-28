@@ -15,11 +15,11 @@ import flixel.tweens.FlxTween;
 import flixel.math.FlxMath;
 import openfl.geom.Point;
 import flixel.system.FlxSound;
+import Sys;
+import sys.FileSystem;
 
 #if windows
 import Discord.DiscordClient;
-import Sys;
-import sys.FileSystem;
 #end
 
 class MusicPlayerSubstate extends MusicBeatSubstate
@@ -33,7 +33,7 @@ class MusicPlayerSubstate extends MusicBeatSubstate
 	var record:FlxSprite;
 	var hole:FlxSprite;
 
-	var songsToPlay:Array<String> = [];
+	var songsToPlay:Array<Sound> = [];
 	var songNames:Array<String> = [];
 	var bpms:Array<Int> = [];
 	var elapsedlol:Float = 0;
