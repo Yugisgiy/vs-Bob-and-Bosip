@@ -91,6 +91,15 @@ class Main extends Sprite
 		addChild(fpsCounter);
 		toggleFPS(FlxG.save.data.fps);
 
+		FlxG.signals.preStateSwitch.add(function () {
+				Paths.clearStoredMemory(true);
+				FlxG.bitmap.dumpCache();
+			}
+		});
+		FlxG.signals.postStateSwitch.add(function () {
+			Paths.clearUnusedMemory();
+		});
+		
 		#if android
 		FlxG.android.preventDefaultKeys = [BACK];
 		#end
