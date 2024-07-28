@@ -109,14 +109,13 @@
 	<haxelib name="flixel-ui" />
 	<haxelib name="newgrounds"/>
 	<haxelib name="faxe" if='switch'/>
-	<haxelib name="polymod"/>
 	<haxelib name="discord_rpc" if="windows"/>
 	<haxelib name="linc_luajit" if="mobile"/>
 	<haxelib name="actuate" />
-	haxelib name="extension-androidtools" if="android" />
+	<haxelib name="extension-androidtools" if="android" />
 	<haxelib name="hxvlc" if="mobile" />
 
-	<!-- <haxelib name="hxcpp-debug-server" if="desktop"/> -->
+	<haxelib name="hxcpp-debug-server" if="debug"/>
 
 	<!-- <haxelib name="markdown" /> -->
 	<!-- <haxelib name="HtmlParser" /> -->
