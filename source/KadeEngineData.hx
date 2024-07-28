@@ -42,7 +42,7 @@ class KadeEngineData
 		if (FlxG.save.data.fpsCap > 285 || FlxG.save.data.fpsCap < 60)
 			FlxG.save.data.fpsCap = 60; // baby proof so you can't hard lock ur copy of kade engine
 		
-		if(FlxG.save.data.fpsCap !== null) {
+		if(FlxG.save.data.fpsCap != null) {
 			final refreshRate:Int = FlxG.stage.application.window.displayMode.refreshRate;
 			FlxG.save.data.fpsCap = Std.int(FlxMath.bound(refreshRate, 60, 240));
 		}
