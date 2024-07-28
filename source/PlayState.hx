@@ -113,7 +113,7 @@ class PlayState extends MusicBeatState
 	public var fuckingVolume:Float = 1;
 	public var useVideo = false;
 
-	public static var webmHandler:WebmHandler;
+	//public static var webmHandler:WebmHandler;
 
 	public var playingDathing = false;
 
