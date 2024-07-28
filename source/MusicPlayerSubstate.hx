@@ -4,6 +4,7 @@ import haxe.macro.Expr.Function;
 import flixel.text.FlxText;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.FlxSprite;
+import flash.media.Sound;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSubState;
