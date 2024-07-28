@@ -1,6 +1,6 @@
 package;
 
-import openfl.media.Sound;
+import flash.media.Sound;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.FlxGraphic;
@@ -365,20 +365,6 @@ class Paths
 				bitmap = OpenFlAssets.getBitmapData(file);
 
 			if (bitmap == null) return null;
-		}
-
-		if (allowGPU && ClientPrefs.cacheOnGPU && bitmap.image != null)
-		@:privateAccess {
-			bitmap.lock();
-			if (bitmap.__texture == null) {
-				bitmap.image.premultiplied = true;
-				bitmap.getTexture(FlxG.stage.context3D);
-			}
-			bitmap.getSurface();
-			bitmap.disposeImage();
-			bitmap.image.data = null;
-			bitmap.image = null;
-			bitmap.readable = true;
 		}
 
 		var graph:FlxGraphic = FlxGraphic.fromBitmapData(bitmap, false, file);
