@@ -1,6 +1,7 @@
 package openfl.display;
 
 import haxe.Timer;
+import flixel.FlxG;
 import openfl.events.Event;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
@@ -79,7 +80,7 @@ class FPS extends TextField
 
 		var currentCount = times.length;
 		currentFPS = Math.round((currentCount + cacheCount) / 2);
-		if (currentFPS > ClientPrefs.framerate) currentFPS = ClientPrefs.framerate;
+		if (currentFPS > FlxG.save.data.fpsCap) currentFPS = FlxG.save.data.fpsCap;
 
 		if (currentCount != cacheCount /*&& visible*/)
 		{
