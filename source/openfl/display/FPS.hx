@@ -80,7 +80,7 @@ class FPS extends TextField
 
 		var currentCount = times.length;
 		currentFPS = Math.round((currentCount + cacheCount) / 2);
-		if (currentFPS > FlxG.save.data.fpsCap) currentFPS = FlxG.save.data.fpsCap;
+		if (currentFPS > FlxG.save.data.framerate) currentFPS = FlxG.save.data.framerate;
 
 		if (currentCount != cacheCount /*&& visible*/)
 		{
@@ -93,7 +93,7 @@ class FPS extends TextField
 			#end
 
 			textColor = 0xFFFFFFFF;
-			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.framerate / 2)
+			if (memoryMegas > 3000 || currentFPS <= FlxG.save.data.framerate / 2)
 			{
 				textColor = 0xFFFF0000;
 			}
