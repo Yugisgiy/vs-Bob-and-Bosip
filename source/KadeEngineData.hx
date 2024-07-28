@@ -1,5 +1,6 @@
 import openfl.Lib;
 import flixel.FlxG;
+import flixel.math.FlxMath;
 
 class KadeEngineData
 {
