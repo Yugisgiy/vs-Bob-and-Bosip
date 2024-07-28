@@ -6883,7 +6883,9 @@ class PlayState extends MusicBeatState
 				switch (curStep){
 					case 326:
 						if (!FlxG.save.data.lowDetail)
+							{
 							//backgroundVideo("assets/videos/pizza.webm");
+							}
 					case 347:
 						if (!FlxG.save.data.lowDetail)
 							//BackgroundVideo.get().stop();
