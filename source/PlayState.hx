@@ -6896,7 +6896,9 @@ class PlayState extends MusicBeatState
 						useVideo = false;
 					case 686:
 						if (!FlxG.save.data.lowDetail)
+							{
 							//backgroundVideo("assets/videos/TV static noise HD 1080p.webm");
+							}
 					case 688:
 						if (!FlxG.save.data.lowDetail)
 							//BackgroundVideo.get().stop();
