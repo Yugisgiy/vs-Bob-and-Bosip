@@ -6801,7 +6801,9 @@ class PlayState extends MusicBeatState
 							trace(dad);
 						case 1776:
 							if (!FlxG.save.data.lowDetail)
+						{
 								//backgroundVideo("assets/videos/screen.webm");
+						}
 						case 1904:
 							if (!FlxG.save.data.lowDetail)
 								//BackgroundVideo.get().stop();
