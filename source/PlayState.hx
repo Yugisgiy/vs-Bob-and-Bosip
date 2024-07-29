@@ -1393,7 +1393,7 @@ class PlayState extends MusicBeatState
 							mini.frames = Paths.getSparrowAtlas('ITB/itb_crowd_back', 'shared');
 							mini.animation.addByPrefix('idle', 'itb_crowd_back', 24, false);
 							mini.animation.play('idle');
-							mini.scale.set(0.55, 0.55);
+							mini.scale.set(1.1, 1.1);
 							add(mini);
 					}
 				case 'ITB-Glitch':
@@ -2114,7 +2114,7 @@ class PlayState extends MusicBeatState
 							mordecai.frames = Paths.getSparrowAtlas('ITB/itb_crowd_middle', 'shared');
 							mordecai.animation.addByPrefix('idle', 'itb_crowd_middle', 24, false);
 							mordecai.animation.play('idle');
-							mordecai.scale.set(0.6, 0.6);
+							mordecai.scale.set(1.2, 1.2);
 							add(mordecai);
 					}
 				case 'ITB-Glitch':
@@ -2142,7 +2142,7 @@ class PlayState extends MusicBeatState
 				} else {
 					dad2 = new Character(0, 520, 'cerbera');
 					thirdBop = new FlxSprite(-1560, 542);
-					thirdBop.scale.set(0.6, 0.6);
+					thirdBop.scale.set(2.4, 2.4);
 					thirdBop.scrollFactor.set(1.3, 1.3);
 					thirdBop.frames = Paths.getSparrowAtlas('ITB/itb_crowd_front', 'shared');
 					thirdBop.animation.addByPrefix('idle', 'itb_crowd_front', 24, false);
