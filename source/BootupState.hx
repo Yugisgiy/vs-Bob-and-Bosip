@@ -58,11 +58,6 @@ class BootupState extends MusicBeatState
 		if (!sys.FileSystem.exists("assets/replays"))
 			sys.FileSystem.createDirectory("assets/replays");
 		#end
-
-		@:privateAccess
-		{
-			trace("Loaded " + openfl.Assets.getLibrary("default").assetsLoaded + " assets (DEFAULT)");
-		}
 		
 		PlayerSettings.init();
 
