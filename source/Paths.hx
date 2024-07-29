@@ -440,20 +440,7 @@ class Paths
 
 			if (bitmap == null) return null;
 		}
-
-		if (allowGPU && bitmap.image != null)
-		@:privateAccess {
-			bitmap.lock();
-			if (bitmap.__texture == null) {
-				bitmap.image.premultiplied = true;
-				bitmap.getTexture(FlxG.stage.context3D);
-			}
-			bitmap.getSurface();
-			bitmap.disposeImage();
-			bitmap.image.data = null;
-			bitmap.image = null;
-			bitmap.readable = true;
-		}
+		localTrackedAssets.push(file);
 
 		var graph:FlxGraphic = FlxGraphic.fromBitmapData(bitmap, false, file);
 		graph.persist = true;
