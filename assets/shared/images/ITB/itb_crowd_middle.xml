@@ -1,20 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="itb_crowd_middle.png">
-	<!-- Created with Adobe Animate version 21.0.7.42652 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="itb_crowd_middle instance 10000" x="0" y="0" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10001" x="3900" y="0" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10002" x="0" y="1480" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10003" x="3900" y="1480" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10004" x="0" y="2960" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10005" x="3900" y="2960" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10006" x="0" y="4440" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10007" x="3900" y="4440" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10008" x="0" y="5920" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10009" x="3900" y="5920" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10010" x="0" y="0" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10011" x="0" y="0" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10012" x="0" y="0" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10013" x="0" y="0" width="3895" height="1475"/>
-	<SubTexture name="itb_crowd_middle instance 10014" x="0" y="0" width="3895" height="1475"/>
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="itb_crowd_middle instance 10000" x="0" y="730" width="1935" height="730" frameX="-6" frameY="2" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10001" x="0" y="1460" width="1942" height="724" frameX="-4" frameY="-10" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10002" x="3875" y="0" width="1946" height="719" frameX="1" frameY="-18" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10003" x="0" y="2907" width="1949" height="718" frameX="0" frameY="-21" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10004" x="1950" y="3625" width="1948" height="717" frameX="2" frameY="-23" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10005" x="0" y="3625" width="1950" height="717" frameX="1" frameY="-23" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10006" x="0" y="2184" width="1941" height="723" frameX="-2" frameY="-11" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10007" x="1936" y="0" width="1939" height="728" frameX="-6" frameY="-3" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10008" x="1936" y="728" width="1935" height="729" frameX="-6" frameY="1" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10009" x="0" y="0" width="1936" height="730" frameX="-8" frameY="2" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10010" x="0" y="730" width="1935" height="730" frameX="-6" frameY="2" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10011" x="0" y="730" width="1935" height="730" frameX="-6" frameY="2" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10012" x="0" y="730" width="1935" height="730" frameX="-6" frameY="2" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10013" x="0" y="730" width="1935" height="730" frameX="-6" frameY="2" frameWidth="1947" frameHeight="740"/>
+	<SubTexture name="itb_crowd_middle instance 10014" x="0" y="730" width="1935" height="730" frameX="-6" frameY="2" frameWidth="1947" frameHeight="740"/>
 </TextureAtlas>
